@@ -1,0 +1,38 @@
+INSERT INTO ubicacion VALUES (12345,'Sucursal1','Guadalajara','Cumbres','Miguel Hidalgo','Gustavo A. Madero','1234','El Vergel','Benito Juarez','Sonora','A lado del Oxxo','314153612','91376287');
+INSERT INTO ubicacion VALUES (12346,'Sucursal2','Monterrey','Torres','Allende','Atlantida','3624','Parque Lira','Tlalpan','Zacatecas','A lado de farmacia Simi','926428764','098235244');
+INSERT INTO ubicacion VALUES (12347,'Sucursal3','Edo. Mex','Olivos','Metro Universidad','Zócalo','12','Chapultepec','Av. Aztecas','Av. Allende','A lado de casa roja','46525744','4265267');
+INSERT INTO ubicacion VALUES (12348,'Sucursal4','CDMX','Centro','Tlahuac','Zona Esmeralda','245','China','Av. Aztecas','La San Felipe','A lado de Metro Cu','63246243','623628');
+INSERT INTO ubicacion VALUES (12349,'Sucursal5','Coahuila','Insurgentes','Miguel Hidalgo','Lago de Guadalupe','3535','Tlaxcala','Parque Hundido','Av. Allende','A la izquierda de Parque Los Gallos','5252367','83463456');
+INSERT INTO ubicacion VALUES (12350,'Sucursal6','Sonora','Copilco','Vista Hermosa','Cuautitlan','174','Tokio','Av. Aztecas','Indios Verdes','A lado de Santa Mónica','73454252','624527');
+INSERT INTO ubicacion VALUES (12351,'Sucursal7','Oaxaca','Cuemanco','Lomas','Autopista Mexico-Oaxaca','873','Australia','Av. Aztecas','18 de Marzo','A la derecha de Estacionamiento Leo Dan','7254527','72464262');
+INSERT INTO ubicacion VALUES (12352,'Sucursal8','Aguascalientes','Cuautepec','Palmas','Cuernavaca','824','Jalisco','Zacatlan','Acatlan','A la izquierda de Autódromo H. Rodriguez','634262672','7236545');
+INSERT INTO ubicacion VALUES (12353,'Sucursal9','Quintana Roo','Olivos','Esmeralda','Prosperidad','534','Nueva York','Mixcoac','Calle 11','A lado de Reclusorio Norte','73552524','42352646');
+INSERT INTO ubicacion VALUES (12354,'Sucursal10','Guerrero','Olivos','Sur','Panteón francés','232','Suiza','Av. Aztecas','Av. Las Palmas','A lado de Ovelizco 27','72464352','1323432');
+
+INSERT INTO detalles VALUES (23456789,'1','1','1','2','1','1','2','2','1','1','1','2','1','2','1');
+INSERT INTO detalles VALUES (23456780,'1','1','1','2','1','1','2','2','1','1','1','2','1','2','1');
+INSERT INTO detalles VALUES (23456791,'1','1','1','2','1','1','2','2','1','1','1','2','1','2','1');
+INSERT INTO detalles VALUES (23456792,'1','1','1','2','1','1','2','2','1','1','1','2','1','2','1');
+INSERT INTO detalles VALUES (23456793,'1','1','1','2','1','1','2','2','1','1','1','2','1','2','1');
+INSERT INTO detalles VALUES (23456794,'1','1','1','2','1','1','2','2','1','1','1','2','1','2','1');
+INSERT INTO detalles VALUES (23456795,'1','1','1','2','1','1','2','2','1','1','1','2','1','2','1');
+INSERT INTO detalles VALUES (23456796,'1','1','1','2','1','1','2','2','1','1','1','2','1','2','1');
+INSERT INTO detalles VALUES (23456797,'1','1','1','2','1','1','2','2','1','1','1','2','1','2','1');
+INSERT INTO detalles VALUES (23456798,'1','1','1','2','1','1','2','2','1','1','1','2','1','2','1');
+
+/*
+
+Estas son inserciones en Oracle, si quieren insertar en otro manejador cambien las fechas
+
+*/
+
+INSERT INTO datos VALUES (34567,'SDN1234','1','I R. M. EL CHIVATITO, CD. MEXICO','18 a. Z. M. PACHUCA, HGO.','TERMINADO','MYR. I.C. MARCOS OMAR RAMIREZ GUADO','5547168832',02,'12-JAN-2023','TELMEX','1115',12345,23456789);
+INSERT INTO datos VALUES (34568,'SDN1235','2','I R. M. EL CHIVATITO, CD. MEXICO','19 a. Z. M. Guadalajara, Jalisco.','TERMINADO','MYR. I.C. MARCOS OMAR RAMIREZ GUADO','5547168833',03,'13-JAN-2023','TELMEX','1116',12346,23456780);
+INSERT INTO datos VALUES (34569,'SDN1236','4','I R. M. EL CHIVATITO, CD. MEXICO','20 a. Z. M. PACHUCA, HGO.','TERMINADO','MYR. I.C. MARCOS OMAR RAMIREZ GUADO','5547168834',02,'14-JAN-2023','TELMEX','1117',12347,23456791);
+INSERT INTO datos VALUES (34560,'SDN1237','2','I R. M. EL CHIVATITO, CD. MEXICO','21 a. Z. M. Estado de Mexico, Toluca.','TERMINADO','MYR. I.C. MARCOS OMAR RAMIREZ GUADO','5547168835',04,'15-JAN-2023','TELMEX','1118',12348,23456792);
+INSERT INTO datos VALUES (34571,'SDN1238','3','I R. M. EL CHIVATITO, CD. MEXICO','1 a. Z. M. Chihuahua, CHU.','TERMINADO','MYR. I.C. MARCOS OMAR RAMIREZ GUADO','5547168836',05,'16-JAN-2023','TELMEX','1119',12349,23456793);
+INSERT INTO datos VALUES (34572,'SDN1239','2','I R. M. EL CHIVATITO, CD. MEXICO','18 a. Z. M. Monterrey, MTY.','TERMINADO','MYR. I.C. MARCOS OMAR RAMIREZ GUADO','5547168837',06,'17-JAN-2023','TELMEX','1120',12350,23456794);
+INSERT INTO datos VALUES (34573,'SDN1230','1','I R. M. EL CHIVATITO, CD. MEXICO','19 a. Z. M. Chiapas, CHP.','TERMINADO','MYR. I.C. MARCOS OMAR RAMIREZ GUADO','5547168838',07,'18-JAN-2023','TELMEX','1121',12351,23456795);
+INSERT INTO datos VALUES (34574,'SDN1241','3','I R. M. EL CHIVATITO, CD. MEXICO','20 a. Z. M. Baja California, BJ.','TERMINADO','MYR. I.C. MARCOS OMAR RAMIREZ GUADO','5547168839',08,'19-JAN-2023','TELMEX','1122',12352,23456796);
+INSERT INTO datos VALUES (34575,'SDN1242','4','I R. M. EL CHIVATITO, CD. MEXICO','21 a. Z. M. Baja California Sur, BJS.','TERMINADO','MYR. I.C. MARCOS OMAR RAMIREZ GUADO','5547168840',09,'20-JAN-2023','TELMEX','1123',12353,23456797);
+INSERT INTO datos VALUES (34576,'SDN1243','1','I R. M. EL CHIVATITO, CD. MEXICO','2 a. Z. M. Quintana Roo, YCT.','TERMINADO','MYR. I.C. MARCOS OMAR RAMIREZ GUADO','5547168841',11,'21-JAN-2023','TELMEX','1124',12354,23456798);

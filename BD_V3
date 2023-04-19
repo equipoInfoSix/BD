@@ -1,0 +1,70 @@
+CREATE TABLE ubicacion(
+	cp 				NUMERIC(5,0) 	NOT NULL,
+	nombreSucursal 	VARCHAR(50) 	NULL,
+	entidad 		VARCHAR(60) 	NULL,
+	municipio 		VARCHAR(60) 	NULL,
+	localidad 		VARCHAR(60) 	NULL,
+	calle 			VARCHAR(60) 	NULL,
+	noExterior 		VARCHAR(20) 	NULL,
+	colonia 		VARCHAR(50) 	NULL,
+	entreCalle 		VARCHAR(50) 	NULL,
+	yCalle 			VARCHAR(50) 	NULL,
+	referencias 	VARCHAR(70) 	NULL,
+	latitud 		VARCHAR(16) 	NULL,
+	longitud 		VARCHAR(16) 	NULL,
+
+	CONSTRAINT pkUbicacion 
+	PRIMARY KEY (cp)
+);
+
+CREATE TABLE detalles(
+	claveSedena 		NUMERIC(8,0)	NOT NULL,
+	snd 				CHAR(1) 		NULL,
+	nte 				CHAR(1) 		NULL,
+	inftca 				CHAR(1) 		NULL,
+	atm 				CHAR(1) 		NULL,
+	telmex 				CHAR(1) 		NULL,
+	cfe 				CHAR(1) 		NULL,
+	llaves 				CHAR(1) 		NULL,
+	vigilancia 			CHAR(1) 		NULL,
+	agua 				CHAR(1) 		NULL,
+	luz 				CHAR(1) 		NULL,
+	drenaje 			CHAR(1) 		NULL,
+	plantaEmergencia 	CHAR(1) 		NULL,
+	ups 				CHAR(1) 		NULL,
+	cajaChica 			CHAR(1) 		NULL,
+	cajaGrande 			CHAR(1) 		NULL,
+
+	CONSTRAINT pkDetalles 
+	PRIMARY KEY (claveSedena)
+);
+
+
+
+CREATE TABLE datos(
+	noSucursal 		NUMERIC(5,0) 	NOT NULL,
+	convenio 		CHAR(14)		NULL,
+	etapa 			CHAR(1) 		NULL,
+	rm 				VARCHAR(50) 	NULL,
+	zm 				VARCHAR(50) 	NULL,
+	estatus 		VARCHAR(15) 	NULL,
+	iro 			VARCHAR(50) 	NULL,
+	tel 			CHAR(10) 		NULL,
+	mesProgramado 	NUMERIC(2,0) 	NULL,
+	metaTerminado 	DATE 			NULL,
+	proveedorConect VARCHAR(50) 	NULL,
+	centroCostos 	CHAR(4) 		NULL,
+	cp 				NUMERIC(5,0) 	NOT NULL,
+	claveSedena 	NUMERIC(8,0)	NOT NULL,
+
+	CONSTRAINT pkDatos 
+	PRIMARY KEY (noSucursal),
+
+	CONSTRAINT fkDatosUbicacion 
+	FOREIGN KEY (cp) 
+	REFERENCES ubicacion(cp),
+
+	CONSTRAINT fkDatosDetalles  
+	FOREIGN KEY (claveSedena) 
+	REFERENCES detalles(claveSedena)
+);
